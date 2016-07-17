@@ -20,7 +20,7 @@ const resizeWindow = () => {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
-  glitch.render_target.setSize(window.innerWidth, window.innerHeight);
+  glitch.resize();
 }
 const setEvent = () => {
   $(window).on('resize', () => {
